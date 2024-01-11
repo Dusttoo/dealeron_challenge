@@ -1,0 +1,193 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+}
+
+.formButtonArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#addItem {
+    background-color: #4CAF50;
+}
+
+#addItem:hover {
+    background-color: #45a049;
+}
+
+#itemDisplayArea {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+}
+
+#receiptArea,
+#itemListArea {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 20px 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 500px;
+    min-height: 300px;
+}
+
+#itemListArea {
+    height: 100%;
+}
+
+#itemList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.noItems {
+    text-align: center;
+    font-weight: 600;
+}
+
+#itemList li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#itemList li button,
+#startOver {
+    background-color: #f44336;
+}
+
+#itemList li button:hover,
+#startOver:hover {
+    background-color: #e53935;
+}
+
+#itemList input[type="number"] {
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 60px;
+    text-align: center;
+}
+
+#itemList input[type="number"]:focus {
+    border-color: #4CAF50;
+}
+
+#commonItemsArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#commonItemsArea button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#commonItemsArea button:hover {
+    background-color: #0056b3;
+}
+
+#receipt {
+    background: #fff;
+    max-width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', monospace;
+}
+
+#receipt .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#receipt .quantity {
+    font-weight: bold;
+}
+
+#receipt .name {
+    flex-grow: 1;
+}
+
+#receipt .price,
+#receipt .total-price {
+    min-width: 70px;
+    text-align: right;
+}
+
+#receipt .totals {
+    border-top: 1px dashed #ccc;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+#receipt .sales-taxes,
+#receipt .total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}

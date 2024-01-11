@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Sales Taxes Calculator</title>
+</head>
+
+<body>
+    <h1>Sales Taxes Calculator</h1>
+    <div id="commonItemsArea">
+        <h3>Commonly Added Items</h3>
+        <div id="commonItems"></div>
+    </div>
+    <form id="itemForm">
+        <input type="number" id="itemQuantity" placeholder="Quantity" required min="1" step="1" value="1">
+        <input type="text" id="itemName" placeholder="Item Name" required>
+        <input type="number" id="itemPrice" placeholder="Price" required min="1" step="0.01">
+        <div class="formButtonArea">
+            <button id="addItem" type="submit">Add Item</button>
+            <button id="startOver">Start Over</button>
+        </div>
+
+    </form>
+    <div id="itemDisplayArea">
+        <div id="receiptArea">
+            <h3>Receipt</h3>
+            <div id="receipt">
+                <h4>Little Shop</h4>
+                <div class="totals">Sales Taxes: $0</div>
+                <div class="totals">Total: $0</div>
+            </div>
+        </div>
+        <div id="itemListArea">
+            <h3>Items Added</h3>
+            <ul id="itemList">
+                <p class="noItems">No Items Yet!</p>
+            </ul>
+        </div>
+    </div>
+
+    <script src="dist/bundle.js"></script>
+
+</body>
+
+</html>
